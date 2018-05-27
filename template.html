@@ -1,0 +1,117 @@
+
+<div id="skin_analytics">
+<div id="sa_h">SKIN ANALYTICS</div>
+	    <div class="sa_popup_special" id="sa_popup_token">
+        <div class="saps_title">Titolo</div>
+        <div class="saps_main">Gentile Utente le ricordiamo che è stato cambiato tutto !</div>
+        <div class="saps_closer">Ho capito</div>
+        </div>
+
+    <div id="sa_m">
+	<p title="L'indirizzo del forum demo va impostato nel modo seguente: http://nome.skin.forumfree.it">Controlla il dominio  della skin che stai realizzando:</p>
+    <input type="text" id="sa_input_url_check" class="sa_input" placeholder="http://" />
+    <input type="button" class="sa_btn" id="sa_btn_url_check" value="CONTROLLA" />
+	<div id="sa_hr"></div>
+    <p title="Il topic di pubblicazione deve contenere un'anteprima della skin di dimensioni 500x375 e il link al forum demo.
+">Controlla l'anteprima della skin:</p>
+    <input type="text" class="sa_input" id="sa_input_image_check" placeholder="http://" />
+   	<input type="button" class="sa_btn" id="sa_btn_image_check" value="CONTROLLA" />
+    <p>Questo Punteggio è calcolato in base alle modifiche fatte dalla skin di base, e non ha valore ufficiale pertanto è solo un riferimento.</p>
+   	<h2 style="text-align:center" id="sa_virtual_points">0/100</h2>
+   	</div>
+</div>
+
+
+
+<style>
+*{margin:0;padding:0;}
+div#skin_analytics {
+    border: 1px solid #CCC;
+    width: 300px;
+    margin: 21px;
+    border-top-color: #aaa;
+    font-family: arial !important;
+    font-size: 14px !important;
+}
+.sa_input {
+    padding: 2px 4px;
+    border-radius: 3px;
+    border: 1px solid #999;
+}
+div#sa_h {
+    background: #dcdcd7;
+    padding: 2px 4px;
+    font-weight: bold;
+}
+.sa_btn,.sa_input {
+    display: block;
+    margin: 10px auto;
+}
+.sa_btn {
+    cursor: pointer;
+    background: #0064ff;
+    color: #fff;
+    border: 1px solid;
+    padding: 2px 4px;
+}
+#sa_m > p {
+    background: #fff linear-gradient(#fff,#eee);
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 11px;
+    padding: 10px;
+    color: #333;
+    border-top: 1px solid #DCDCDC;
+    text-shadow: 0 1px 0 #FFF, 0 -1px 0 #fff;
+    margin-top: 2px;
+    font-weight: bold;
+}
+.sa_popup_special.red{background:tomato}
+.sa_popup_special {
+    background: white;
+    line-height: 1.5em;
+    text-align: center;
+    position: absolute;
+    margin-top: 50px;
+    width: 280px;
+    color: #444;
+    word-wrap: break-word;
+    min-height: 60px;
+    z-index: 9999;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    margin-left: 10px;
+    box-shadow: 0 15px 14px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    transform: scale(0,0);
+}.saps_title {
+    background: #e8e8e8;
+    border-bottom: 1px solid#ccc;
+    text-align: left;
+    padding: 0 10px;
+    font-weight: bold;
+    color: #444;
+}
+
+.saps_main {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #ccc;
+    margin: 10px;
+}
+
+.saps_closer {
+    background: #eee;
+    color: #0064ff;
+    cursor: pointer;
+    user-select: none;
+}
+
+.saps_closer:hover {
+    background: #ddd;
+}
+
+.saps_closer:active {
+    background: #ccc;
+}
+</style>
